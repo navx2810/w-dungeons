@@ -1,0 +1,25 @@
+<h2>Line Parsing</h2>
+<div class="box">
+  <p>When a new line is added to the campaign, each word (case-insensitive) is checked against the entities.</p>
+  <p>If the line holds a match, the entry number is stored on the entity.</p>
+  <p>The matches are highlighted by adding a class to span tag.</p>
+  <h3>Problems</h3>
+  <div class="box">
+    <p>When an entity's name is changed, a background run has to check <strong>every</strong> entry for the new occurance.</p>
+    <p>This can be very costly.</p>
+  </div>
+ <h3>Solutions</h3>
+  <div class="box">
+    <p>When a name change occurs, the user can choose to update any lines where the entity was linked to correct the information.</p>
+    <p>The check would only happen on those lines and should be more efficient.</p>
+    <p>This would also allow for the user to choose to have the program auto-replace the old name with the new one.</p>
+    <p>At that point, it's a simple string replace.</p>
+  </div>
+  <h3>Additional Ideas</h3>
+  <div class="box">
+      <p>One idea could be to have each entry clickable. When it is first clicked, the HTML contents are changed to spans with click events attached to them.</p>
+      <p>When one of the words are clicked, the user can decide whether to link the word to an entity (by creating a new one, or changing the work to represent an already existing entity), or if the word represents an entity, check out the entity.</p>
+      <p>This means each row has two states.</p>
+      <p>I'd imagine that only one row can be "highlighted" at a time, so likely the container will handle which one is selected. The formatting can be handled by the entry itself.</p>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+body {
+  font-family: "Roboto Condensed";
+}
+p {
+  padding: 0 1em;
+}
+.note {
+  padding: 0.5em;
+  color: #fff;
+  background: #222;
+  border-radius: 0.5em;
+  text-align: center;
+}
+.box {
+  padding: 0 1.5em;
+}
+.health-example {
+  width: 250px;
+  height: 1em;
+  border: solid 2px #666;
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+.health-example .left {
+  background: #64c832;
+  width: 95%;
+  height: 100%;
+  float: left;
+}
+.health-example .right {
+  background: #000;
+  float: right;
+  width: 5%;
+  height: 100%;
+}

@@ -1,0 +1,95 @@
+body {
+  font-family: "Montserrat";
+  color: #eee;
+  padding: 0;
+  margin: 0;
+}
+#content {
+  border: 0.5em solid #444;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3em;
+  background: #323232;
+  box-sizing: border-box;
+}
+.top {
+  flex: 0 0 content;
+  height: 4em;
+  background: #252a2f;
+  color: #c7c8c9;
+}
+.log {
+  flex: 1 1 auto;
+  background: #2c3138;
+  display: flex;
+  flex-direction: column;
+}
+.entry {
+  display: flex;
+  padding: 1em 0.5em;
+  align-items: center;
+}
+.entry .date {
+  flex: 0 0 content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(2,3,4,0.5);
+}
+.entry .date p {
+  flex: 0 0 content;
+  padding: 0;
+  margin: 0;
+}
+.entry .content {
+  flex: 1 1 auto;
+}
+.entry .content p {
+  padding: 0 1em;
+}
+.info {
+  display: flex;
+  flex: 0 0 content;
+  height: 4em;
+  background: #575b8e;
+  color: rgba(1,2,3,0.4);
+  font-weight: 600;
+  align-items: center;
+  padding: 0 1em;
+}
+.info .left {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info .left p {
+  flex: 1 1 content;
+  margin: 0;
+  padding: 0;
+}
+.info .right {
+  flex: 0 0 content;
+  font-weight: 800;
+}
+.info .right p {
+  cursor: pointer;
+}
+.input {
+  flex: 0 0 content;
+  background: #3e4249;
+  height: 4em;
+  display: flex;
+}
+.input input {
+  font-family: "Montserrat";
+  flex: 1 1 auto;
+  border: none;
+  background: none;
+  padding: 1em;
+  color: #fff;
+}
