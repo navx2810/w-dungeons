@@ -1,10 +1,13 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 <div id="content">
   <div class="top">
+    
+    <div><p>Entities</p></div>
+    <div><p>Options</p></div>
   </div>
   <div class="info">
     <div class="left">
-    <p>Displaying 1 out of 100 messages.</p>
+    <p>Displaying 2 out of 100 messages.</p>
     <p>Click here to show more.</p>
      </div>
     <div class="right">
@@ -20,6 +23,10 @@
       <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quasi autem numquam? Et totam molestiae, nemo maxime modi, dolores ut recusandae impedit velit sit illo. Porro neque, quas mollitia. Eveniet?</p>
       </div>
+      <div class="options">
+        <p>edit</p>
+        <p>delete</p>
+      </div>
     </div>
     
     <div class="entry">
@@ -28,7 +35,11 @@
         <p>2:35 AM</p>
       </div>
       <div class="content">
-        <p>The heroes venture forth into the dungeon.</p>
+        <p>I am content that fills the entire paragraph line Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quibusdam praesentium ipsam, atque quaerat accusamus recusandae, perspiciatis harum. Recusandae eos, doloremque quo velit placeat! Error est, quisquam at soluta quis.</p>
+      </div>
+      <div class="options">
+        <p>edit</p>
+        <p>delete</p>
       </div>
     </div>
   </div>
@@ -55,19 +66,37 @@ body
 
 .top
   flex 0 0 content
-  height 4em
+  display flex
   background rgb(37, 42, 47)
   color rgb(199, 200, 201)
+  flex-direction row
+  justify-content space-around
+  align-items center
+  div:hover
+    background rgb(48, 54, 58)
+  div
+    flex 1 1 auto
+    display flex
+    justify-content center
+    align-items center
+    cursor pointer    
+    p
+      flex 0 0 content
+      font-weight 800
+      border-bottom 2px solid rgb(20, 150, 200)
+      color rgb(20, 150, 200)
+      text-align center
 
 .log
   flex 1 1 auto
   background rgb(44, 49, 56)
   display flex
   flex-direction column
+  overflow-y scroll
 
 .entry
   display flex
-  padding 1em .5em
+  padding 0 .5em
   align-items center
   .date
     flex 0 0 content
@@ -75,15 +104,28 @@ body
     flex-direction column
     align-items center
     justify-content center
-    color rgba(2,3,4, .5)
+    /* color rgba(2,3,4, .5) */
+    color #999
     p
       flex 0 0 content
+      white-space nowrap
       padding 0
       margin 0
   .content
     flex 1 1 auto
     p
       padding 0 1em
+  .options
+    display flex
+    color rgb(20, 150, 200)
+    flex-direction column
+    justify-content center
+    align-items center
+    p
+      cursor pointer
+      flex 0 0 content
+      margin 0
+      padding 0
 
 .info
   display flex
